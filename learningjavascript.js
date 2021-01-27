@@ -264,56 +264,130 @@
 // }
 // console.log(myFunction("status"));
 
-ourObj = {
-    "name":"Mo'tabar",
-    "age":"16",
-    "status":"people"
-};
-function check (prop) {
-    if(ourObj.hasOwnProperty(prop)){
-    return ourObj[prop];}
-    else{
-        return "Not found!"
+// ourObj = {
+//     "name":"Mo'tabar",
+//     "age":"16",
+//     "status":"people"
+// };
+// function check (prop) {
+//     if(ourObj.hasOwnProperty(prop)){
+//     return ourObj[prop];}
+//     else{
+//         return "Not found!"
+//     }
+// }
+// console.log(check("status"));
+// var myStorage = {
+//     "teaching": {
+//         "school":"11 years",
+//         "liceum": "3 years",
+//     },
+//     "working place": "Google as a developer!",
+// }
+// var data = myStorage.teaching["school"];
+// console.log(data);
+
+// var goodArray = [
+//     {
+//         first:"religion",
+//         second: [
+//         "health",
+//         "child",
+//         "wealth"
+//     ]
+// },
+// {
+//     first:"parents",
+//     second: [
+//         "siblings",
+//         "family",
+//         "friends"
+//     ]
+// }
+// ];
+
+// var need = goodArray[0].second[0];
+// console.log(need);
+
+// var myArray = [];
+// var i = 0;
+// while(i < 7){
+//     myArray.push(i);
+//     i++;
+// }
+
+// console.log(myArray);
+
+// var ourArray = [];
+
+// for(var i = 2; i < 9; i++) {
+//     ourArray.push(i);
+// }
+
+// console.log(ourArray);
+
+
+// var array = [];
+
+// for(let i = 0; i <= 15 ; i += 3) {
+//     array.push(i)
+// }
+// console.log(array);
+
+var ourArray = [];
+for(i = 10;i > -6; i-=2) {
+    ourArray.push(i);
+}
+
+console.log(ourArray);
+
+var ourArr = [1,2,3,4,5,6,7]
+var number = 0;
+for(i = 0; i < ourArr.length; i+=2) {
+    number += ourArr[i];
+}
+console.log(number);
+
+function multiplyAll(arr) {
+   var product = 1;
+    
+    for(var i = 0; i < arr.length; i++){
+        for(var k = 0; k < arr[i].length; k++){
+            product *= arr[i][k];
+        }
     }
+    return product;
 }
-console.log(check("status"));
-var myStorage = {
-    "teaching": {
-        "school":"11 years",
-        "liceum": "3 years",
-    },
-    "working place": "Google as a developer!",
+ var product = multiplyAll[[1,2],[3,4],[5,6],[7,8]];
+console.log(product);
+
+function randomf(){
+    return Math.random();
 }
-var data = myStorage.teaching["school"];
-console.log(data);
+console.log(randomf());
 
-var goodArray = [
-    {
-        first:"religion",
-        second: [
-        "health",
-        "child",
-        "wealth"
-    ]
-},
-{
-    first:"parents",
-    second: [
-        "siblings",
-        "family",
-        "friends"
-    ]
+function returnfull(){
+    return Math.floor(Math.random()*25);
 }
-];
+console.log(returnfull());
 
-var need = goodArray[0].second[0];
-console.log(need);
-
-
-
-
-
+function randomA(max, min){
+    return Math.floor(Math.random()*(max - min +3)) + min;
+}
+var mydata = randomA(10, 4);
+console.log(mydata);
 
 
+function turnToInt(str){
+    return parseInt(str);
+}
 
+console.log(turnToInt("345"));
+
+
+function basetwo(str){
+    return parseInt(str, 2);
+}
+
+console.log(basetwo("100110"));
 
