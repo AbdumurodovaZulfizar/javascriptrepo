@@ -391,3 +391,13 @@ function basetwo(str){
 
 console.log(basetwo("100110"));
 
+
+// function DioganalDiffirence(arr){
+//     let result = [0; 0];
+//     for(let i; i < arr.length; i++){
+//         let a = arr[i][0 + i];
+//         let b = arr[i][0 - 1 - i];
+//         result = [result[0] + a, result[1] + b];
+//     }
+//     return Math.abs(result[0] - result[1]);
+// }
